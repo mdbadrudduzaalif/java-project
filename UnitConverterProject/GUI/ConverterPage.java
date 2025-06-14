@@ -63,7 +63,14 @@ public class ConverterPage extends JFrame implements ActionListener {
 
         saveButton = createButton(10, 230, 320, 30, "Save History");
         saveButton.setBackground(Color.GRAY);
+		
+		JButton deleteButton = createButton(10, 310, 320, 30, "Delete Last Entry");
+		deleteButton.setBackground(Color.GRAY);
 
+		JButton updateButton = createButton(10, 270, 320, 30, "Update Last Entry");
+		updateButton.setBackground(Color.GRAY);
+
+		
         historyArea = new JTextArea();
         historyArea.setFont(font15);
 		historyArea.setEditable(false);
