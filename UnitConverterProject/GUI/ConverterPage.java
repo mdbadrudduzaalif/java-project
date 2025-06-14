@@ -46,16 +46,22 @@ public class ConverterPage extends JFrame implements ActionListener {
         outputLabel = createLabel(10, 120, 150, 30, "Result:");
         outputField = createTextField(160, 120, 170, 30, "");
         outputField.setEditable(false);
-
-        convertButton = createButton(10, 160, 157, 30, "");
+		
+		
+		outputLabel = createLabel(55, 170, 150, 30, "Convert");
+		
+		outputLabel = createLabel(215, 170, 150, 30, "Refresh");
+		
+		
+        convertButton = createButton(10, 190, 157, 30, "");
         convertButton.setIcon(new ImageIcon("./images/convert.png"));
 		convertButton.setBackground(Color.GRAY);//button background
 
-        clearButton = createButton(172, 160, 157, 30, "");
+        clearButton = createButton(172, 190, 157, 30, "");
         clearButton.setIcon(new ImageIcon("./images/refresh.png"));
 		clearButton.setBackground(Color.GRAY);
 
-        saveButton = createButton(10, 200, 320, 30, "Save History");
+        saveButton = createButton(10, 230, 320, 30, "Save History");
         saveButton.setBackground(Color.GRAY);
 
         historyArea = new JTextArea();
